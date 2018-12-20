@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-        client.user.setGame(`Broadcast`,'https://www.twitch.tv/TEST-Broadcast');
+
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
 });
