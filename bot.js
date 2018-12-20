@@ -16,7 +16,7 @@ const prefix = "$"
 
 
 
-  kboosh.on('message', message => {
+  client.on('message', message => {
     if (message.content.split(' ')[0] == '$b')
        message.guild.members.forEach( member => {
          if (!message.member.hasPermission("ADMINISTRATOR"))  return;
@@ -28,7 +28,7 @@ const prefix = "$"
                                                     });
             
                                                   });
-   kboosh.on("message", message => {
+   client.on("message", message => {
        var prefix = "%";
  
              var args = message.content.substring(prefix.length).split(" ");
